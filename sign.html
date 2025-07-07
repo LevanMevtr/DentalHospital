@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sign in</title>
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <style>
+    
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "poppins",sans-serif;
+    }
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-image:url(img/background\(login\).jpg);
+
+    }
+    .cadre{
+      position: absolute;
+      width: 440px;
+      background-color:transparent ;
+      border: solid;
+      border-width: 0.3px;
+      border-color: rgb(222, 221, 221);
+      color: white;
+      padding: 30px ,40px;
+      border-radius: 10px;
+    }
+    .cadre h1{
+      font-size: 36px;
+      text-align: center;
+    }
+    .input-box{
+      width: 90%;
+      height: 50px;
+      margin: 30px 0;
+      margin-bottom: 10px; 
+      margin-left: 20px;
+    }
+    .input{
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border:  solid rgba(255, 255 255, .2);
+      outline: none;
+      border-width: 1.3px;
+      border-radius: 40px;
+      color: white;
+      padding: 20px 45px 20px 20px;
+    }
+    .input::placeholder{
+      color: white;
+    }
+    i{
+      position: relative;
+      transform: translate(-50%);
+      bottom: 32px;
+      left: 370px;
+      font-size: 20px;
+    }
+    .remember-forgot{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 0px;
+    }
+    .remember-forgot::checkmark{
+      cursor: pointer;
+    }
+    .btn {
+      position: relative;
+      overflow: hidden;
+      width: 380px;
+      height: 40px;
+      border-radius: 40px;
+      border: none;
+      margin-left: 29px;
+      margin-top: 10px;
+      font-weight: 400;
+      background-color: '';
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      transition: color 0.3s ease;
+  }
+  .aa{
+      text-decoration: none;
+      color: white;
+  }
+
+  .btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background-color: rgb(5, 142, 142);
+    z-index: 0;
+    transition: width 0.5s ease;
+  }
+
+
+  .btn span {
+    position: relative;
+    z-index: 1;
+  }
+
+
+  .btn:hover::before {
+    width: 100%;
+  }
+
+  .btn:hover {
+    color: white;
+  }
+
+    .regiter-link{
+      text-align: center;
+      margin: 20px 0px 15px;
+    }
+    .a{
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+   <div class="cadre">
+    <form id="form" action="">
+      <h1>Login</h1>
+      <div class="input-box">
+        <input id="Username" class="input" type="text" placeholder="Username">
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input id="password"  class="input" type="password" placeholder="Password">
+        <i class='bx  bx-lock'  ></i>
+      </div>
+      <div class="remember-forgot">
+        <label><input id="checkbox" type="checkbox">Rember me</label>
+        <a class="aa" href="">Forgot Password</a>
+      </div>
+
+      <button type="submit" class="btn"><span>Login</span></button>
+      <div class="regiter-link">
+        <p class="p">don't have an account ?<a class="a" href="#">
+          Register
+         </a>
+       </p>
+      </div>
+    </form>
+   </div>
+   <script>
+    // alert('Sign up to Neo Dentist to benefit from a 5% discount on all your consultations.')
+   </script>
+</body>
+</html>
