@@ -1,14 +1,29 @@
+@media (max-width: 768px) {
+      body {
+        font-size: 16px;
+      }
+      .respons {
+        flex-direction: column;
+      }
+      .main {
+        flex-direction: column-reverse;
+      }
+      .our-Services {
+        flex-direction: column;
+      }
+    }
 .photoback{
-  height: 600px;
+  height: 100%;
   background-image: url(img/background\(login\).jpg);
   margin-top: 100px;
 
 }
 .advertise{
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 500px;
+  width:100%;
   height: 600px;
 }
 
